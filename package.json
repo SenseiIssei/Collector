@@ -1,0 +1,11 @@
+{
+  "name": "Collector",
+  "version": "1.0.0",
+  "description": "A simple Discord bot that executes scripts.",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  },
+  "author": "Sensei Issei",
+  "license": "MIT"
+}
