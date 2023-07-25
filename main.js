@@ -35,6 +35,7 @@ client.on('message', (message) => {
       } else {
         message.channel.send('Bot init successfully.');
       }
+    });
   } else if (command === 'restart') {
     // Execute the restart_bot.sh script
     exec('bash restart_bot.sh', (error, stdout, stderr) => {
