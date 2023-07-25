@@ -26,6 +26,15 @@ client.on('message', (message) => {
         message.channel.send('Bot started successfully.');
       }
     });
+  } else if(command === 'init') {
+    // Execute the init script
+    exec('cd ../bot', (error, stdout, stderr) => {
+      if (error) {
+        message.channel.send('An error occurred while init the bot.');
+        console.error(error);
+      } else {
+        message.channel.send('Bot init successfully.');
+      }
   } else if (command === 'restart') {
     // Execute the restart_bot.sh script
     exec('bash restart_bot.sh', (error, stdout, stderr) => {
